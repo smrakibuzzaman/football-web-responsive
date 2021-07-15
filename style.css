@@ -1,0 +1,179 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* utilities */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* banner style */
+.top-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2D25A0;
+    /* margin-left: 120px; */
+    margin-bottom: 70px;
+
+}
+
+.banner-text{
+
+font-size: 64px;
+width: 485px;
+height: 230px;
+color: #FFFFFF;
+margin: 0;
+
+}
+
+
+
+.watch-b{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-top: 30px;
+    transition: transform 3s ease-in-out;
+}
+
+.watch-b:hover{
+    transform: scale(2);
+}
+
+.banner-pic img{
+    width: 500px;
+    height: 384px;
+
+}
+
+/* article and player styles */
+
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-row-gap: 20px;
+    justify-content: center; 
+    margin-bottom: 50px;
+  
+}
+
+.players{
+    width: 330px;
+    height: 474px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.player img{
+    width: 300px;
+    height: 256px;
+    margin: 16px;
+}
+
+.player-info{
+    margin: 16px;
+    height: 154px;
+}
+
+.player-name{
+    font-size: 28px;
+    color: #18191F;
+}
+
+.player-detail{
+    color: #6C6C6C;
+    font-size: 16px;
+    
+   
+}
+
+/* table styles */
+
+table {
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+td,
+th {
+    border: 1px solid lightgray;
+    padding: 0 10px;
+
+}
+
+/* final game styles */
+
+.copa-final{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.final-text{
+   margin-left: 20px;
+}
+
+
+
+/* footer styles */
+
+.football-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.logo img{
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-icons p{
+    font-size: 18px;
+}
+
+/* media quaries */
+
+/* mobile device */
+@media only screen and (max-width:688px) {
+    
+    header, article, footer{
+        overflow: hidden;
+    }
+    
+    .container{
+        width: 100%;
+    }
+    .top-banner{
+        display: inline-block;
+        width: 100%;
+
+    }
+    .logo img{
+        width: 300px;
+        height: 110px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-banner, .player, .player-info, .football-logo, .social-icons{
+        flex-direction: column;
+    }
+      
+}
